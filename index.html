@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alpha Vitta Consultoria | Planos de saúde com orientação especializada</title>
+  <meta name="description" content="Consultoria em planos de saúde e odontológicos em São Paulo. Comparamos as principais operadoras e explicamos carências, coberturas e rede antes de você assinar. Para você, sua família e sua empresa.">
+  <meta property="og:title" content="Alpha Vitta Consultoria | Planos de saúde com orientação especializada">
+  <meta property="og:description" content="Comparamos as principais operadoras e acompanhamos você da escolha à assinatura, e depois dela.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#132a57">
+  <script>
+    (function () {
+      var t;
+      try { t = localStorage.getItem("av-tema"); } catch (e) {}
+      if (t !== "claro" && t !== "escuro") t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "escuro" : "claro";
+      document.documentElement.setAttribute("data-tema", t);
+    })();
+  </script>
+  <link rel="icon" type="image/png" href="assets/marca/simbolo.png">
+  <link rel="preload" href="assets/fontes/figtree-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "InsuranceAgency",
+    "name": "Alpha Vitta Consultoria",
+    "description": "Consultoria especializada em planos de saúde e odontológicos para pessoas, famílias e empresas.",
+    "telephone": "+551153042132",
+    "email": "contato@alphavittaconsultoria.com.br",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Paulista, 1765 – Bela Vista",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a href="#conteudo" class="pular">Pular para o conteúdo</a>
+
+  <!-- Barra de contato -->
+  <div class="topo">
+    <div class="wrap topo__in">
+      <p class="topo__frase">Consultoria em planos de saúde para você, sua família e sua empresa</p>
+      <ul class="topo__contatos" role="list">
+        <li><a href="tel:+551153042132"><svg class="ic" aria-hidden="true"><use href="#i-fone"/></svg>(11) 5304-2132</a></li>
+        <li><a href="https://wa.me/5511978260281" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-whats"/></svg>(11) 97826-0281</a></li>
+        <li class="topo__email"><a href="mailto:contato@alphavittaconsultoria.com.br"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>contato@alphavittaconsultoria.com.br</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header class="cab" data-cab>
+    <div class="wrap cab__in">
+      <a href="#inicio" class="marca" aria-label="Alpha Vitta Consultoria, início">
+        <img src="assets/marca/simbolo.png" alt="" class="marca__simbolo marca__simbolo--claro" width="411" height="292">
+        <img src="assets/marca/simbolo-claro.png" alt="" class="marca__simbolo marca__simbolo--escuro" width="411" height="292">
+        <span class="marca__texto">
+          <span class="marca__nome">ALPHA VITTA</span>
+          <span class="marca__sub">Consultoria Especializada</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="menu" aria-label="Navegação principal" data-menu>
+        <ul role="list" class="nav__lista">
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#empresas">Para empresas</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#operadoras">Operadoras</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+        </ul>
+        <a href="#contato" class="btn btn--ouro nav__cta">Fazer cotação</a>
+      </nav>
+
+      <button class="tema" type="button" aria-pressed="false" data-tema-btn>
+        <svg class="ic tema__lua" aria-hidden="true"><use href="#i-lua"/></svg>
+        <svg class="ic tema__sol" aria-hidden="true"><use href="#i-sol"/></svg>
+        <span class="sr">Tema escuro</span>
+      </button>
+
+      <button class="cab__menu" type="button" aria-expanded="false" aria-controls="gaveta" data-menu-btn>
+        <span class="cab__menu-barras" aria-hidden="true"></span>
+        <span class="sr">Abrir menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Sidebar: recebe as opções que não cabem no cabeçalho -->
+  <div class="gaveta" id="gaveta" data-gaveta>
+    <div class="gaveta__fundo" data-gaveta-fechar></div>
+    <div class="gaveta__painel" role="dialog" aria-modal="true" aria-labelledby="gaveta-titulo">
+      <div class="gaveta__topo">
+        <p class="gaveta__titulo" id="gaveta-titulo">Menu</p>
+        <button class="gaveta__fechar" type="button" data-gaveta-fechar>
+          <svg class="ic" aria-hidden="true"><use href="#i-fechar"/></svg>
+          <span class="sr">Fechar menu</span>
+        </button>
+      </div>
+      <ul role="list" class="gaveta__lista">
+        <li hidden><a href="#planos">Planos</a></li>
+        <li hidden><a href="#empresas">Para empresas</a></li>
+        <li hidden><a href="#como-funciona">Como funciona</a></li>
+        <li hidden><a href="#operadoras">Operadoras</a></li>
+        <li hidden><a href="#sobre">Sobre</a></li>
+        <li hidden><a href="#duvidas">Dúvidas</a></li>
+      </ul>
+      <a href="#contato" class="btn btn--ouro gaveta__cta">Fazer cotação</a>
+      <div class="gaveta__contato">
+        <a href="https://wa.me/5511978260281" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-whats"/></svg>(11) 97826-0281</a>
+        <a href="tel:+551153042132"><svg class="ic" aria-hidden="true"><use href="#i-fone"/></svg>(11) 5304-2132</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="conteudo" tabindex="-1">
+
+    <!-- Hero -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="wrap hero__in">
+        <div class="hero__texto">
+          <h1 id="hero-titulo" class="hero__titulo">O plano de saúde certo, escolhido com quem <span class="destaque">entende do assunto</span>.</h1>
+          <p class="hero__sub">Comparamos as principais operadoras do país e explicamos carência, cobertura e rede credenciada antes de você assinar. E seguimos ao seu lado depois do contrato.</p>
+
+          <form class="cotador" data-cotador aria-labelledby="cotador-titulo">
+            <p class="cotador__titulo" id="cotador-titulo">Para quem é o plano?</p>
+            <div class="cotador__opcoes" role="radiogroup" aria-labelledby="cotador-titulo">
+              <label class="opcao"><input type="radio" name="perfil" value="só para mim" checked><span><svg class="ic" aria-hidden="true"><use href="#i-pessoa"/></svg>Só para mim</span></label>
+              <label class="opcao"><input type="radio" name="perfil" value="para minha família"><span><svg class="ic" aria-hidden="true"><use href="#i-familia"/></svg>Minha família</span></label>
+              <label class="opcao"><input type="radio" name="perfil" value="para uma gestante"><span><svg class="ic" aria-hidden="true"><use href="#i-gestante"/></svg>Gestante</span></label>
+              <label class="opcao"><input type="radio" name="perfil" value="para alguém com 60 anos ou mais"><span><svg class="ic" aria-hidden="true"><use href="#i-senior"/></svg>60+ anos</span></label>
+              <label class="opcao"><input type="radio" name="perfil" value="para minha empresa"><span><svg class="ic" aria-hidden="true"><use href="#i-empresa"/></svg>Minha empresa</span></label>
+            </div>
+            <div class="cotador__acao">
+              <a class="btn btn--ouro btn--grande cotador__btn" data-cotador-link href="https://wa.me/5511978260281" target="_blank" rel="noopener">
+                <svg class="ic" aria-hidden="true"><use href="#i-whats"/></svg>
+                <span data-cotador-rotulo>Ver minhas opções no WhatsApp</span>
+              </a>
+              <p class="cotador__alt">ou ligue <a href="tel:+551153042132">(11) 5304-2132</a></p>
+            </div>
+            <p class="cotador__depois"><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg>Depois, um consultor conversa com você sobre idades, cidade e prioridades.</p>
+          </form>
+
+          <ul class="hero__selos" role="list">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-escudo"/></svg>Certificação ANS</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-cadeado"/></svg>Seus dados protegidos</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-conversa"/></svg>Atendimento humano</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__disco"></div>
+          <img src="assets/marca/traco-dourado.png" alt="" class="hero__traco" width="411" height="281">
+          <img src="assets/fotos/consultora-660.webp"
+               srcset="assets/fotos/consultora-420.webp 420w, assets/fotos/consultora-660.webp 660w, assets/fotos/consultora-980.webp 980w"
+               sizes="(min-width: 1100px) 520px, (min-width: 760px) 44vw, 80vw"
+               width="980" height="1035" alt="" class="hero__pessoa" fetchpriority="high">
+          <div class="etiqueta etiqueta--a">
+            <strong>2.089</strong>
+            <span>clientes atendidos</span>
+          </div>
+          <div class="etiqueta etiqueta--b">
+            <svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>
+            <span><strong>19</strong> operadoras no comparativo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Operadoras -->
+    <section class="operadoras" id="operadoras" aria-labelledby="operadoras-titulo">
+      <div class="wrap">
+        <h2 class="operadoras__titulo" id="operadoras-titulo">Comparamos planos das principais operadoras do Brasil</h2>
+      </div>
+      <div class="faixa" data-faixa>
+        <ul class="faixa__trilho" role="list">
+          <li><img src="assets/operadoras/sulamerica.svg" alt="SulAmérica"></li>
+          <li><img src="assets/operadoras/bradesco-saude.svg" alt="Bradesco Saúde" class="logo--alta"></li>
+          <li><img src="assets/operadoras/amil.svg" alt="Amil" class="logo--compacta"></li>
+          <li><img src="assets/operadoras/porto-seguro.svg" alt="Porto Seguro Saúde" class="logo--alta"></li>
+          <li><img src="assets/operadoras/hapvida.svg" alt="Hapvida"></li>
+          <li><img src="assets/operadoras/plena-saude.png" alt="Plena Saúde" class="logo--plena"></li>
+        </ul>
+      </div>
+      <div class="wrap">
+        <button class="faixa__pausa" type="button" aria-pressed="false" data-faixa-pausa hidden>
+          <svg class="ic" aria-hidden="true"><use href="#i-pausa"/></svg>
+          <span>Pausar logos</span>
+        </button>
+        <p class="operadoras__mais"><span>E também:</span> Omint, NotreDame Intermédica, Prevent Senior, Care Plus, Alice, MedSênior, Ampla Saúde, Ameplan, Blue, Blue Med, São Cristóvão Saúde, Trasmontano e Seguros Unimed.</p>
+      </div>
+    </section>
+
+    <!-- Planos por situação -->
+    <section class="secao planos" id="planos" aria-labelledby="planos-titulo">
+      <div class="wrap">
+        <header class="secao__cab">
+          <h2 class="secao__titulo" id="planos-titulo">Cada momento da vida pede um plano diferente</h2>
+          <p class="secao__intro">Escolha a sua situação e veja o que analisamos com você antes de indicar qualquer operadora.</p>
+        </header>
+
+        <div class="abas" data-abas>
+          <div class="abas__lista" role="tablist" aria-label="Situações">
+            <button role="tab" id="aba-individual" aria-controls="painel-individual" aria-selected="true">Individual</button>
+            <button role="tab" id="aba-familia" aria-controls="painel-familia" aria-selected="false" tabindex="-1">Família</button>
+            <button role="tab" id="aba-gestante" aria-controls="painel-gestante" aria-selected="false" tabindex="-1">Gestantes</button>
+            <button role="tab" id="aba-cirurgia" aria-controls="painel-cirurgia" aria-selected="false" tabindex="-1">Cirurgias</button>
+            <button role="tab" id="aba-preexistente" aria-controls="painel-preexistente" aria-selected="false" tabindex="-1">Doenças preexistentes</button>
+            <button role="tab" id="aba-senior" aria-controls="painel-senior" aria-selected="false" tabindex="-1">60+ anos</button>
+            <button role="tab" id="aba-odonto" aria-controls="painel-odonto" aria-selected="false" tabindex="-1">Odontológico</button>
+          </div>
+
+          <div class="painel" role="tabpanel" id="painel-individual" aria-labelledby="aba-individual" tabindex="0">
+            <div class="painel__foto"><img src="assets/fotos/individual-768.webp" srcset="assets/fotos/individual-480.webp 480w, assets/fotos/individual-768.webp 768w, assets/fotos/individual-960.webp 960w" sizes="(min-width: 960px) 460px, 92vw" width="960" height="640" alt="Homem sorrindo enquanto usa o notebook em uma mesa de trabalho" loading="lazy"></div>
+            <div class="painel__texto">
+              <h3>Plano individual</h3>
+              <p>Analisamos seu perfil e apresentamos opções que cabem no seu orçamento e cobrem o que você realmente usa, sem pagar por excessos.</p>
+              <ul class="lista-check" role="list">
+                <li>Hospitais e laboratórios perto de casa e do trabalho</li>
+                <li>Enfermaria ou apartamento, com ou sem coparticipação</li>
+                <li>Abrangência regional ou nacional, conforme a sua rotina</li>
+              </ul>
+              <a class="btn btn--azul" href="https://wa.me/5511978260281?text=Ol%C3%A1!%20Quero%20orienta%C3%A7%C3%A3o%20sobre%20um%20plano%20de%20sa%C3%BAde%20individual." target="_blank" rel="noopener">Quero um plano individual</a>
+            </div>
+          </div>
+
+          <div class="painel" role="tabpanel" id="painel-familia" aria-labelledby="aba-familia" tabindex="0" hidden>
+            <div class="painel__foto"><img src="assets/fotos/familia-768.webp" srcset="assets/fotos/familia-480.webp 480w, assets/fotos/familia-768.webp 768w, assets/fotos/familia-1200.webp 1200w" sizes="(min-width: 960px) 460px, 92vw" width="1200" height="675" alt="Pai, mãe e filho abraçados no sofá de casa" loading="lazy"></div>
+            <div class="painel__texto">
+              <h3>Plano familiar</h3>
+              <p>Ajudamos sua família a escolher o melhor plano equilibrando cobertura e custo-benefício, com uma rede que atenda adultos e crianças.</p>
+              <ul class="lista-check" role="list">
+                <li>Pediatras, maternidades e pronto-socorro infantil na rede</li>
+                <li>Comparação do valor por faixa etária de cada pessoa</li>
+                <li>Inclusão de dependentes e recém-nascidos sem surpresas</li>
+              </ul>
+              <a class="btn btn--azul" href="https://wa.me/5511978260281?text=Ol%C3%A1!%20Quero%20orienta%C3%A7%C3%A3o%20sobre%20um%20plano%20de%20sa%C3%BAde%20para%20minha%20fam%C3%ADlia." target="_blank" rel="noopener">Quero um plano para a família</a>
+            </div>
+          </div>
+
+          <div class="painel" role="tabpanel" id="painel-gestante" aria-labelledby="aba-gestante" tabindex="0" hidden>
+            <div class="painel__foto"><img src="assets/fotos/gestante-768.webp" srcset="assets/fotos/gestante-480.webp 480w, assets/fotos/gestante-768.webp 768w, assets/fotos/gestante-960.webp 960w" sizes="(min-width: 960px) 460px, 92vw" width="960" height="640" alt="Gestante de vestido branco com as mãos sobre a barriga" loading="lazy"><p class="painel__selo" aria-hidden="true"><strong>300 dias</strong><span>carência máxima da ANS para parto</span></p></div>
+            <div class="painel__texto">
+              <h3>Planos para gestantes</h3>
+              <p>Ajudamos futuras mamães a encontrar planos com cobertura adequada para a gestação e o acompanhamento médico, explicando os prazos com clareza.</p>
+              <ul class="lista-check" role="list">
+                <li>Carência para parto: até 300 dias pela regra da ANS</li>
+                <li>Pré-natal, exames e urgências cobertos desde cedo</li>
+                <li>Maternidades da sua preferência na rede credenciada</li>
+              </ul>
+              <a class="btn btn--azul" href="https://wa.me/5511978260281?text=Ol%C3%A1!%20Estou%20gestante%20e%20quero%20orienta%C3%A7%C3%A3o%20sobre%20planos%20de%20sa%C3%BAde." target="_blank" rel="noopener">Falar sobre gestação</a>
+            </div>
+          </div>
+
+          <div class="painel" role="tabpanel" id="painel-cirurgia" aria-labelledby="aba-cirurgia" tabindex="0" hidden>
+            <div class="painel__foto"><img src="assets/fotos/cirurgia-768.webp" srcset="assets/fotos/cirurgia-480.webp 480w, assets/fotos/cirurgia-768.webp 768w, assets/fotos/cirurgia-960.webp 960w" sizes="(min-width: 960px) 460px, 92vw" width="960" height="640" alt="Médico mostrando informações em um tablet a um paciente" loading="lazy"><p class="painel__selo" aria-hidden="true"><strong>180 dias</strong><span>carência máxima da ANS para cirurgias eletivas</span></p></div>
+            <div class="painel__texto">
+              <h3>Planos para cirurgias</h3>
+              <p>Indicamos planos para quem precisa realizar procedimentos cirúrgicos com segurança, olhando hospital, equipe e prazos antes da contratação.</p>
+              <ul class="lista-check" role="list">
+                <li>Hospitais de referência para o procedimento que você precisa</li>
+                <li>Carência para cirurgias eletivas: até 180 dias pela ANS</li>
+                <li>Possibilidade de reembolso para escolher o seu médico</li>
+              </ul>
+              <a class="btn btn--azul" href="https://wa.me/5511978260281?text=Ol%C3%A1!%20Preciso%20de%20um%20plano%20de%20sa%C3%BAde%20para%20fazer%20uma%20cirurgia." target="_blank" rel="noopener">Falar sobre cirurgia</a>
+            </div>
+          </div>
+
+          <div class="painel" role="tabpanel" id="painel-preexistente" aria-labelledby="aba-preexistente" tabindex="0" hidden>
+            <div class="painel__foto"><img src="assets/fotos/preexistente-768.webp" srcset="assets/fotos/preexistente-480.webp 480w, assets/fotos/preexistente-768.webp 768w, assets/fotos/preexistente-960.webp 960w" sizes="(min-width: 960px) 460px, 92vw" width="960" height="640" alt="Médica conversando com um paciente idoso durante a consulta" loading="lazy"><p class="painel__selo" aria-hidden="true"><strong>24 meses</strong><span>prazo máximo da Cobertura Parcial Temporária</span></p></div>
+            <div class="painel__texto">
+              <h3>Doenças preexistentes</h3>
+              <p>Orientamos quem já tem uma condição de saúde, explicando prazos de carência e coberturas para que você contrate sabendo exatamente o que esperar.</p>
+              <ul class="lista-check" role="list">
+                <li>Como funciona a Cobertura Parcial Temporária (até 24 meses)</li>
+                <li>Consultas, exames e urgências que seguem cobertos</li>
+                <li>Declaração de saúde preenchida do jeito certo</li>
+              </ul>
+              <a class="btn btn--azul" href="https://wa.me/5511978260281?text=Ol%C3%A1!%20Tenho%20uma%20doen%C3%A7a%20preexistente%20e%20quero%20orienta%C3%A7%C3%A3o%20sobre%20planos." target="_blank" rel="noopener">Falar sobre preexistência</a>
+            </div>
+          </div>
+
+          <div class="painel" role="tabpanel" id="painel-senior" aria-labelledby="aba-senior" tabindex="0" hidden>
+            <div class="painel__foto"><img src="assets/fotos/senior-768.webp" srcset="assets/fotos/senior-480.webp 480w, assets/fotos/senior-768.webp 768w, assets/fotos/senior-960.webp 960w" sizes="(min-width: 960px) 460px, 92vw" width="960" height="640" alt="Casal de idosos abraçado e sorrindo" loading="lazy"><p class="painel__selo" aria-hidden="true"><strong>59 anos</strong><span>depois dessa idade, o plano não muda de faixa etária</span></p></div>
+            <div class="painel__texto">
+              <h3>Planos para 60+ anos</h3>
+              <p>Comparamos operadoras com rede e atendimento pensados para quem tem mais de 60 anos, como MedSênior e Prevent Senior, entre outras.</p>
+              <ul class="lista-check" role="list">
+                <li>Sem reajuste por mudança de idade após os 59 anos</li>
+                <li>Rede com geriatras, centros de exames e pronto atendimento</li>
+                <li>Programas de acompanhamento e prevenção</li>
+              </ul>
+              <a class="btn btn--azul" href="https://wa.me/5511978260281?text=Ol%C3%A1!%20Quero%20orienta%C3%A7%C3%A3o%20sobre%20planos%20de%20sa%C3%BAde%20para%2060%2B%20anos." target="_blank" rel="noopener">Falar sobre 60+</a>
+            </div>
+          </div>
+
+          <div class="painel" role="tabpanel" id="painel-odonto" aria-labelledby="aba-odonto" tabindex="0" hidden>
+            <div class="painel__foto"><img src="assets/fotos/odonto-768.webp" srcset="assets/fotos/odonto-480.webp 480w, assets/fotos/odonto-768.webp 768w, assets/fotos/odonto-1200.webp 1200w" sizes="(min-width: 960px) 460px, 92vw" width="1200" height="800" alt="Dentista examinando os dentes de um paciente sorridente" loading="lazy"></div>
+            <div class="painel__texto">
+              <h3>Planos odontológicos</h3>
+              <p>Planos odontológicos sozinhos ou junto com o plano de saúde, para você, sua família ou seus colaboradores.</p>
+              <ul class="lista-check" role="list">
+                <li>Limpeza, restaurações, canal e urgências</li>
+                <li>Opções com ortodontia e próteses</li>
+                <li>Dentistas credenciados perto de você</li>
+              </ul>
+              <a class="btn btn--azul" href="https://wa.me/5511978260281?text=Ol%C3%A1!%20Quero%20orienta%C3%A7%C3%A3o%20sobre%20planos%20odontol%C3%B3gicos." target="_blank" rel="noopener">Quero um plano odontológico</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Empresas -->
+    <section class="empresas" id="empresas" aria-labelledby="empresas-titulo">
+      <div class="wrap empresas__in">
+        <div class="empresas__foto">
+          <img src="assets/fotos/equipe-768.webp" srcset="assets/fotos/equipe-480.webp 480w, assets/fotos/equipe-768.webp 768w, assets/fotos/equipe-1200.webp 1200w" sizes="(min-width: 960px) 560px, 92vw" width="1200" height="675" alt="Equipe reunida em volta de uma mesa de reunião no escritório" loading="lazy">
+        </div>
+        <div class="empresas__texto">
+          <h2 class="secao__titulo" id="empresas-titulo">Plano de saúde para a sua empresa</h2>
+          <p>Do MEI à empresa com centenas de colaboradores: cotamos planos empresariais e PME em várias operadoras ao mesmo tempo e mostramos, lado a lado, o custo por vida e o que cada um cobre.</p>
+          <ul class="empresas__lista" role="list">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-empresa"/></svg><span><strong>PME e empresarial</strong>Planos a partir de poucas vidas, conforme as regras de cada operadora.</span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-dente"/></svg><span><strong>Saúde e odonto juntos</strong>Um pacote de benefícios mais completo para reter talentos.</span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-conversa"/></svg><span><strong>Suporte no dia a dia</strong>Inclusões, exclusões e dúvidas dos colaboradores com a gente.</span></li>
+          </ul>
+          <a class="btn btn--ouro" href="https://wa.me/5511978260281?text=Ol%C3%A1!%20Quero%20uma%20cota%C3%A7%C3%A3o%20de%20plano%20de%20sa%C3%BAde%20para%20minha%20empresa." target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-whats"/></svg>Cotar para minha empresa</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como funciona -->
+    <section class="secao passos" id="como-funciona" aria-labelledby="passos-titulo">
+      <div class="wrap">
+        <header class="secao__cab secao__cab--centro">
+          <h2 class="secao__titulo" id="passos-titulo">Como a nossa consultoria funciona</h2>
+          <p class="secao__intro">Três etapas claras, do primeiro contato até depois da assinatura.</p>
+        </header>
+        <ol class="passos__lista" role="list">
+          <li class="passo">
+            <span class="passo__num" aria-hidden="true">1</span>
+            <h3>Avaliação personalizada</h3>
+            <p>Entendemos suas necessidades e preferências para identificar os planos adequados e construir uma base sólida para a sua decisão.</p>
+          </li>
+          <li class="passo">
+            <span class="passo__num" aria-hidden="true">2</span>
+            <h3>Explicação detalhada</h3>
+            <p>Apresentamos coberturas e benefícios de cada plano e respondemos todas as dúvidas para você seguir com confiança.</p>
+          </li>
+          <li class="passo">
+            <span class="passo__num" aria-hidden="true">3</span>
+            <h3>Suporte completo</h3>
+            <p>Acompanhamos todo o processo até a efetivação do plano, e continuamos com você depois da contratação.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Glossário -->
+    <section class="secao glossario" aria-labelledby="glossario-titulo">
+      <div class="wrap glossario__in">
+        <div class="glossario__cab">
+          <h2 class="secao__titulo" id="glossario-titulo">O que ninguém explica, a gente explica</h2>
+          <p class="secao__intro">Os termos que mais confundem na hora de contratar, em linguagem simples. Toque em cada um.</p>
+        </div>
+        <div class="termos" data-termos>
+          <details class="termo" open>
+            <summary>Carência</summary>
+            <p>É o tempo entre a contratação e o momento em que você pode usar cada cobertura. Pela ANS, os prazos máximos são 24 horas para urgência e emergência, 300 dias para parto e 180 dias para os demais casos. Em alguns casos é possível reduzir esses prazos.</p>
+          </details>
+          <details class="termo">
+            <summary>Coparticipação</summary>
+            <p>Você paga uma mensalidade menor e, quando usa consultas ou exames, paga uma parte do valor. Vale a pena para quem usa pouco o plano; para quem usa muito, nem sempre.</p>
+          </details>
+          <details class="termo">
+            <summary>Rede credenciada</summary>
+            <p>São os hospitais, laboratórios e médicos que atendem pelo plano. Antes de indicar uma operadora, conferimos se os lugares que importam para você estão na rede.</p>
+          </details>
+          <details class="termo">
+            <summary>Abrangência</summary>
+            <p>É a área onde o plano funciona: municipal, regional, estadual ou nacional. Quem viaja muito ou tem família em outra cidade precisa olhar com atenção.</p>
+          </details>
+          <details class="termo">
+            <summary>Reembolso</summary>
+            <p>Alguns planos devolvem parte do valor quando você usa um médico fora da rede. O valor depende da tabela do plano, e mostramos os números antes de você decidir.</p>
+          </details>
+          <details class="termo">
+            <summary>Cobertura Parcial Temporária (CPT)</summary>
+            <p>Para doenças preexistentes declaradas, a operadora pode restringir cirurgias, leitos de alta tecnologia e procedimentos de alta complexidade ligados a essa doença por até 24 meses. Consultas e exames continuam cobertos.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre e números -->
+    <section class="sobre" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="wrap sobre__in">
+        <div class="sobre__texto">
+          <h2 class="secao__titulo" id="sobre-titulo">Fundada para ir além de vender planos</h2>
+          <p>A Alpha Vitta nasceu da vontade de três corretores de oferecer algo diferente: uma consultoria com ética, transparência e cuidado de verdade com cada pessoa.</p>
+          <p>Nossa missão é orientar pessoas, famílias e empresas na escolha do plano de saúde ideal, com suporte dedicado em cada etapa.</p>
+        </div>
+        <dl class="numeros">
+          <div class="numero"><dt>Clientes atendidos</dt><dd data-contar="2089">2.089</dd></div>
+          <div class="numero"><dt>Planos comparados</dt><dd data-contar="1350">1.350</dd></div>
+          <div class="numero"><dt>Consultorias no último ano</dt><dd data-contar="1500">1.500</dd></div>
+          <div class="numero"><dt>Parcerias ativas com operadoras</dt><dd data-contar="175">175</dd></div>
+        </dl>
+        <ul class="credenciais" role="list">
+          <li><svg class="ic" aria-hidden="true"><use href="#i-escudo"/></svg><span><strong>Certificação ANS</strong>Atuação conforme as normas da Agência Nacional de Saúde Suplementar.</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-cadeado"/></svg><span><strong>Segurança de dados</strong>Suas informações de saúde tratadas com sigilo.</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-premio"/></svg><span><strong>Prêmio Federação Nacional de Saúde</strong>Reconhecimento pelo trabalho de consultoria.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Dúvidas -->
+    <section class="secao duvidas" id="duvidas" aria-labelledby="duvidas-titulo">
+      <div class="wrap duvidas__in">
+        <header class="secao__cab">
+          <h2 class="secao__titulo" id="duvidas-titulo">Dúvidas frequentes</h2>
+          <p class="secao__intro">Não encontrou a sua? Mande no <a href="https://wa.me/5511978260281" target="_blank" rel="noopener">WhatsApp</a>.</p>
+        </header>
+        <div class="faq">
+          <details class="faq__item">
+            <summary>Por que contratar com uma consultoria e não direto na operadora?</summary>
+            <p>Porque cada operadora apresenta só os próprios planos. Nós comparamos várias ao mesmo tempo, explicamos as diferenças de cobertura, rede e carência e indicamos o que faz sentido para o seu perfil, sem empurrar uma marca.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Quem tem doença preexistente pode contratar um plano?</summary>
+            <p>Pode. A operadora não pode recusar você por isso. O que pode existir é a Cobertura Parcial Temporária, de até 24 meses, para procedimentos de alta complexidade ligados à doença declarada. Explicamos tudo antes da assinatura.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Estou grávida. Ainda vale a pena contratar?</summary>
+            <p>Sim. Consultas de pré-natal, exames e urgências passam a ser cobertos conforme os prazos de carência, e o parto tem carência de até 300 dias. Analisamos o seu caso para encontrar a melhor alternativa.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Minha empresa é pequena. Consigo um plano empresarial?</summary>
+            <p>Na maioria dos casos, sim. Há planos PME para poucas vidas, inclusive para MEI, conforme as regras de cada operadora. Mande o número de pessoas e as idades que fazemos a comparação.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Como é o atendimento?</summary>
+            <p>Pelo WhatsApp, telefone ou e-mail, e também presencialmente em nosso endereço na Av. Paulista. Você conversa com um consultor de verdade em todas as etapas.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contato" id="contato" aria-labelledby="contato-titulo">
+      <div class="wrap contato__in">
+        <div class="contato__info">
+          <h2 class="contato__titulo" id="contato-titulo">Vamos encontrar o seu plano?</h2>
+          <p>Conte um pouco sobre o que você precisa. Sua mensagem chega direto no WhatsApp de um consultor.</p>
+          <ul class="canais" role="list">
+            <li><a href="https://wa.me/5511978260281" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-whats"/></svg><span><small>WhatsApp</small>(11) 97826-0281</span></a></li>
+            <li><a href="tel:+551153042132"><svg class="ic" aria-hidden="true"><use href="#i-fone"/></svg><span><small>Telefone e WhatsApp</small>(11) 5304-2132</span></a></li>
+            <li><a href="mailto:contato@alphavittaconsultoria.com.br"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg><span><small>E-mail</small>contato@alphavittaconsultoria.com.br</span></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Av.+Paulista%2C+1765+-+Bela+Vista%2C+S%C3%A3o+Paulo+-+SP" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-local"/></svg><span><small>Endereço</small>Av. Paulista, 1765 – Bela Vista, São Paulo – SP</span></a></li>
+          </ul>
+        </div>
+
+        <form class="formulario" data-form novalidate>
+          <h3 class="formulario__titulo">Peça sua cotação</h3>
+          <div class="campo">
+            <label for="f-nome">Seu nome</label>
+            <input id="f-nome" name="nome" type="text" autocomplete="name" required aria-describedby="f-nome-erro">
+            <p class="campo__erro" id="f-nome-erro" aria-live="polite"></p>
+          </div>
+          <div class="campo-linha">
+            <div class="campo">
+              <label for="f-tel">WhatsApp com DDD</label>
+              <input id="f-tel" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(11) 90000-0000" required aria-describedby="f-tel-erro">
+              <p class="campo__erro" id="f-tel-erro" aria-live="polite"></p>
+            </div>
+            <div class="campo">
+              <label for="f-email">E-mail <span class="opcional">(opcional)</span></label>
+              <input id="f-email" name="email" type="email" autocomplete="email" aria-describedby="f-email-erro">
+              <p class="campo__erro" id="f-email-erro" aria-live="polite"></p>
+            </div>
+          </div>
+          <div class="campo">
+            <label for="f-perfil">Para quem é o plano?</label>
+            <select id="f-perfil" name="perfil" required aria-describedby="f-perfil-erro">
+              <option value="">Selecione</option>
+              <option>Só para mim</option>
+              <option>Para minha família</option>
+              <option>Para uma gestante</option>
+              <option>Para alguém com 60 anos ou mais</option>
+              <option>Para minha empresa</option>
+              <option>Plano odontológico</option>
+            </select>
+            <p class="campo__erro" id="f-perfil-erro" aria-live="polite"></p>
+          </div>
+          <div class="campo">
+            <label for="f-msg">Idades, cidade ou o que não pode faltar <span class="opcional">(opcional)</span></label>
+            <textarea id="f-msg" name="mensagem" rows="3" placeholder="Ex.: casal de 34 e 36 anos e um bebê, em São Paulo, quero o Hospital X na rede"></textarea>
+          </div>
+          <button class="btn btn--ouro btn--grande formulario__enviar" type="submit"><svg class="ic" aria-hidden="true"><use href="#i-whats"/></svg>Enviar pelo WhatsApp</button>
+          <p class="formulario__nota"><svg class="ic" aria-hidden="true"><use href="#i-cadeado"/></svg>Seus dados são usados só para a sua cotação.</p>
+          <p class="formulario__ok" data-form-ok hidden role="status">Abrimos o WhatsApp com a sua mensagem pronta. Se ele não abriu, <a href="https://wa.me/5511978260281" target="_blank" rel="noopener" data-form-ok-link>toque aqui</a>.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="wrap rodape__in">
+      <div class="rodape__marca">
+        <a href="#inicio" class="marca marca--clara" aria-label="Alpha Vitta Consultoria, início">
+          <img src="assets/marca/simbolo-claro.png" alt="" class="marca__simbolo" width="411" height="292">
+          <span class="marca__texto">
+            <span class="marca__nome">ALPHA VITTA</span>
+            <span class="marca__sub">Consultoria Especializada</span>
+          </span>
+        </a>
+        <p>Orientação especializada para escolher o plano de saúde ideal, com clareza e confiança em cada etapa.</p>
+      </div>
+      <nav aria-label="Planos">
+        <p class="rodape__titulo">Planos</p>
+        <ul role="list">
+          <li><a href="#planos">Individual e familiar</a></li>
+          <li><a href="#planos">Gestantes</a></li>
+          <li><a href="#planos">60+ anos</a></li>
+          <li><a href="#planos">Odontológico</a></li>
+          <li><a href="#empresas">Para empresas</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Alpha Vitta">
+        <p class="rodape__titulo">Alpha Vitta</p>
+        <ul role="list">
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#operadoras">Operadoras</a></li>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#duvidas">Dúvidas frequentes</a></li>
+        </ul>
+      </nav>
+      <address class="rodape__contato">
+        <p class="rodape__titulo">Contato</p>
+        <a href="tel:+551153042132">(11) 5304-2132</a>
+        <a href="https://wa.me/5511978260281" target="_blank" rel="noopener">(11) 97826-0281 (WhatsApp)</a>
+        <a href="mailto:contato@alphavittaconsultoria.com.br">contato@alphavittaconsultoria.com.br</a>
+        <span>Av. Paulista, 1765 – Bela Vista<br>São Paulo – SP</span>
+      </address>
+    </div>
+    <div class="wrap rodape__base">
+      <p>© <span data-ano>2026</span> Alpha Vitta Consultoria. Todos os direitos reservados.</p>
+      <p>As marcas das operadoras pertencem aos seus respectivos donos.</p>
+    </div>
+  </footer>
+
+  <a class="whats-flutuante" href="https://wa.me/5511978260281?text=Ol%C3%A1!%20Quero%20orienta%C3%A7%C3%A3o%20para%20escolher%20um%20plano%20de%20sa%C3%BAde." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+    <svg class="ic" aria-hidden="true"><use href="#i-whats"/></svg>
+  </a>
+
+  <!-- Ícones -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-fone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6.5 9 6.5 9-6.5"/></g></symbol>
+      <symbol id="i-whats" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.2l-.9 1.1c-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2-.2-.3 0-.5.1-.6l.5-.5.3-.5v-.5c-.1-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8a9.9 9.9 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.9 9.9 0 1 1 12 21.8zm8.4-18.3A11.8 11.8 0 0 0 1.7 17.8L0 24l6.4-1.7A11.9 11.9 0 0 0 24 11.9a11.8 11.8 0 0 0-3.6-8.4z"/></symbol>
+      <symbol id="i-pessoa" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></g></symbol>
+      <symbol id="i-familia" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="6.5" r="3"/><circle cx="17" cy="8" r="2.5"/><path d="M2.5 20a5.5 5.5 0 0 1 11 0"/><path d="M14 20a4 4 0 0 1 7.5-1.8"/></g></symbol>
+      <symbol id="i-gestante" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="4.5" r="2.5"/><path d="M9.5 9.5c-1 1.5-1.5 3.5-1 6l.5 6.5"/><path d="M10.5 9.5c3.5.5 5.5 2.5 5.5 5s-2 3.5-5 3.5"/><path d="M12.5 18l.5 4"/></g></symbol>
+      <symbol id="i-senior" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7.5-4.6-9.2-9.4C1.7 8.4 3.8 5 7.2 5c2 0 3.6 1.1 4.8 2.8C13.2 6.1 14.8 5 16.8 5c3.4 0 5.5 3.4 4.4 6.6C19.5 16.4 12 21 12 21z"/><path d="M7.5 12h2.5l1.5-2.5 2 5 1.5-2.5h2"/></g></symbol>
+      <symbol id="i-empresa" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8.5 7V5.5A1.5 1.5 0 0 1 10 4h4a1.5 1.5 0 0 1 1.5 1.5V7"/><path d="M3 12.5h18"/><path d="M12 11.5v2"/></g></symbol>
+      <symbol id="i-dente" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7.5 3C4.8 3 3 5 3 7.8c0 2.4 1 3.6 1.7 5.4.8 2 .9 7.8 3 7.8 1.8 0 1.6-5 4.3-5s2.5 5 4.3 5c2.1 0 2.2-5.8 3-7.8.7-1.8 1.7-3 1.7-5.4C21 5 19.2 3 16.5 3c-2 0-3 1-4.5 1S9.5 3 7.5 3z"/></symbol>
+      <symbol id="i-conversa" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.2L4 20.5l1.3-4.6A8 8 0 1 1 21 12z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01"/></g></symbol>
+      <symbol id="i-escudo" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5s7.5-3.5 7.5-9.5V5.2L12 2.5 4.5 5.2V12c0 6 7.5 9.5 7.5 9.5z"/><path d="m9 12 2.2 2.2L15.5 10"/></g></symbol>
+      <symbol id="i-cadeado" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10.5" width="15" height="10.5" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/><path d="M12 15v2"/></g></symbol>
+      <symbol id="i-premio" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m8.5 14 -1.5 7.5 5-2.7 5 2.7-1.5-7.5"/></g></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-seta" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-local" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5s-7-5.8-7-11.5a7 7 0 0 1 14 0c0 5.7-7 11.5-7 11.5z"/><circle cx="12" cy="10" r="2.5"/></g></symbol>
+      <symbol id="i-fechar" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+      <symbol id="i-pausa" viewBox="0 0 24 24"><path fill="currentColor" d="M7 4.5h3.2v15H7zM13.8 4.5H17v15h-3.2z"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M7.5 4.8v14.4L19 12z"/></symbol>
+      <symbol id="i-lua" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></symbol>
+      <symbol id="i-sol" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></g></symbol>
+    </defs>
+  </svg>
+
+  <script src="js/site.js" defer></script>
+</body>
+</html>

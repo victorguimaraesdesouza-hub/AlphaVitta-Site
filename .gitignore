@@ -1,0 +1,21 @@
+# Criado pelo BrainChain ao inicializar o repositório.
+# É um ponto de partida: edite à vontade, ele não será reescrito.
+node_modules/
+dist/
+build/
+target/
+.venv/
+__pycache__/
+.DS_Store
+Thumbs.db
+
+# Material interno: fica só no computador, fora do repositório público
+_referencia/
+.impeccable/
+.brainchain/
+.codex/
+.grok/
+.github/hooks/
+.claude/
+PRODUCT.md
+DESIGN.md
