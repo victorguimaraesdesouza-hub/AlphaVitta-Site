@@ -663,16 +663,6 @@ html:not(.js) .nav__lista { flex-wrap: wrap; }
 @media (max-width: 900px) { .rodape__in { grid-template-columns: 1fr 1fr; } .rodape__marca { grid-column: 1 / -1; } }
 @media (max-width: 520px) { .rodape__in { grid-template-columns: 1fr; gap: 32px; } }
 
-/* WhatsApp flutuante */
-.whats-flutuante {
-  position: fixed; right: 18px; bottom: 18px; z-index: 50; display: grid; place-items: center; width: 60px; height: 60px; border-radius: 50%;
-  background: #1fa855; color: #fff; box-shadow: 0 12px 28px -10px rgba(13, 31, 68, 0.6);
-  transform: translateY(120%); opacity: 0; transition: transform 0.4s var(--ease), opacity 0.3s;
-}
-.whats-flutuante .ic { width: 30px; height: 30px; }
-.whats-flutuante.is-visivel { transform: none; opacity: 1; }
-.whats-flutuante:hover { background: #18914a; }
-
 /* Troca de tema: cruzamento suave quando o navegador permite */
 ::view-transition-old(root), ::view-transition-new(root) { animation-duration: 0.45s; animation-timing-function: var(--ease); }
 

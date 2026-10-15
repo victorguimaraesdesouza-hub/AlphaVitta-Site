@@ -143,14 +143,11 @@
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(encaixar);
   }
 
-  // Cabeçalho com sombra ao rolar e WhatsApp flutuante depois do hero
+  // Cabeçalho com sombra ao rolar
   var cab = document.querySelector("[data-cab]");
-  var flutuante = document.querySelector(".whats-flutuante");
-  var hero = document.querySelector(".hero");
   function aoRolar() {
     var y = window.scrollY;
     if (cab) cab.classList.toggle("is-rolado", y > 8);
-    if (flutuante && hero) flutuante.classList.toggle("is-visivel", y > hero.offsetHeight * 0.75);
   }
   window.addEventListener("scroll", aoRolar, { passive: true });
   aoRolar();
