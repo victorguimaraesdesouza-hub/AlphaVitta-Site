@@ -363,11 +363,11 @@ html:not(.js) .nav__lista { flex-wrap: wrap; }
 /* Medalhão: o disco recorta a parte de baixo da foto e a cabeça escapa por cima */
 .hero__recorte {
   position: absolute; inset: 0;
-  -webkit-mask-image: radial-gradient(circle closest-side, #000 99.4%, transparent 100%), linear-gradient(#000, #000);
+  -webkit-mask-image: radial-gradient(circle closest-side, #000 calc(100% + 0.5px), transparent calc(100% + 1.5px)), linear-gradient(#000, #000);
   -webkit-mask-size: 100% 86.96%, 100% 56.5%;
   -webkit-mask-position: bottom, top;
   -webkit-mask-repeat: no-repeat;
-  mask-image: radial-gradient(circle closest-side, #000 99.4%, transparent 100%), linear-gradient(#000, #000);
+  mask-image: radial-gradient(circle closest-side, #000 calc(100% + 0.5px), transparent calc(100% + 1.5px)), linear-gradient(#000, #000);
   mask-size: 100% 86.96%, 100% 56.5%;
   mask-position: bottom, top;
   mask-repeat: no-repeat;
