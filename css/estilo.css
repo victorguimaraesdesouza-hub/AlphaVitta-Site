@@ -319,7 +319,7 @@ html:not(.js) .nav__lista { flex-wrap: wrap; }
   display: grid; min-height: calc(100vh - var(--topo-h)); min-height: calc(100svh - var(--topo-h));
 }
 @media (max-width: 1080px) { .hero { --topo-h: 108px; } }
-.hero__in { --hero-base: clamp(28px, 2.5vw, 36px); display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr); gap: clamp(24px, 4vw, 56px); align-items: center; padding-block: clamp(20px, 2.2vw, 28px) var(--hero-base); }
+.hero__in { --hero-base: clamp(28px, 2.5vw, 36px); display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr); gap: clamp(24px, 4vw, 56px); align-items: center; padding-block: clamp(28px, 4vw, 56px); }
 .hero__titulo { font-size: var(--t-display); font-weight: 800; letter-spacing: -0.03em; line-height: 1.06; max-width: 19ch; }
 .destaque { color: var(--ouro-texto); }
 .hero__sub { margin-top: 14px; font-size: var(--t-grande); color: var(--tinta-2); max-width: 54ch; }
@@ -355,21 +355,33 @@ html:not(.js) .nav__lista { flex-wrap: wrap; }
 .hero__selos li { display: inline-flex; align-items: center; gap: 8px; }
 .hero__selos .ic { color: var(--icone); }
 
-.hero__visual { position: relative; align-self: end; aspect-ratio: 0.95; max-width: clamp(440px, 64svh, 600px); width: 100%; margin-left: auto; margin-bottom: calc(-1 * var(--hero-base)); }
+.hero__visual { position: relative; aspect-ratio: 1 / 1.15; max-width: clamp(400px, 58svh, 540px); width: 100%; margin-left: auto; }
 .hero__disco {
-  position: absolute; left: 0; right: 0; bottom: 2%; aspect-ratio: 1; border-radius: 50%;
+  position: absolute; left: 0; right: 0; bottom: 0; aspect-ratio: 1; border-radius: 50%;
   background: var(--disco);
 }
-.hero__traco { position: absolute; width: 34%; left: -9%; top: 56%; transform: rotate(-6deg); }
-.hero__pessoa { position: absolute; bottom: 0; left: 50%; width: 84%; transform: translateX(-50%); }
+/* Medalhão: o disco recorta a parte de baixo da foto e a cabeça escapa por cima */
+.hero__recorte {
+  position: absolute; inset: 0;
+  -webkit-mask-image: radial-gradient(circle closest-side, #000 99.4%, transparent 100%), linear-gradient(#000, #000);
+  -webkit-mask-size: 100% 86.96%, 100% 56.5%;
+  -webkit-mask-position: bottom, top;
+  -webkit-mask-repeat: no-repeat;
+  mask-image: radial-gradient(circle closest-side, #000 99.4%, transparent 100%), linear-gradient(#000, #000);
+  mask-size: 100% 86.96%, 100% 56.5%;
+  mask-position: bottom, top;
+  mask-repeat: no-repeat;
+}
+.hero__traco { position: absolute; z-index: 1; width: 34%; left: -9%; top: 60%; transform: rotate(-6deg); }
+.hero__pessoa { position: absolute; bottom: 0; left: 50%; width: 100%; transform: translateX(-50%); }
 .etiqueta {
   position: absolute; display: flex; align-items: center; gap: 10px; padding: 12px 18px;
   background: var(--superficie); border-radius: 16px; box-shadow: var(--sombra-forte); color: var(--tinta); font-size: 0.9rem; line-height: 1.25;
 }
 .etiqueta strong { font-size: 1.6rem; font-weight: 800; color: var(--titulo); letter-spacing: -0.02em; }
 .etiqueta span { max-width: 9ch; }
-.etiqueta--a { left: -6%; top: 40%; }
-.etiqueta--b { right: -4%; bottom: 14%; }
+.etiqueta--a { z-index: 2; left: -8%; top: 38%; }
+.etiqueta--b { z-index: 2; right: -6%; bottom: 12%; }
 .etiqueta--b .ic { width: 28px; height: 28px; padding: 6px; border-radius: 50%; background: var(--ouro); color: var(--azul-fundo); }
 .etiqueta--b span { max-width: none; }
 .etiqueta--b strong { font-size: 1rem; }
@@ -377,12 +389,11 @@ html:not(.js) .nav__lista { flex-wrap: wrap; }
 @media (max-width: 900px) {
   .hero__in { grid-template-columns: 1fr; }
   .hero__titulo { max-width: 18ch; }
-  .hero__visual { max-width: 360px; margin-inline: auto; aspect-ratio: 1.05; }
-  .hero__disco { left: 6%; right: 6%; }
-  .hero__pessoa { width: 74%; }
+  .hero { min-height: 0; }
+  .hero__visual { max-width: 340px; margin-inline: auto; margin-top: 12px; }
   .hero__traco { left: 0; width: 30%; }
-  .etiqueta--a { left: -4%; top: 34%; }
-  .etiqueta--b { right: -4%; bottom: 10%; }
+  .etiqueta--a { left: -4%; top: 36%; }
+  .etiqueta--b { right: -4%; bottom: 8%; }
   .etiqueta { padding: 10px 14px; }
   .etiqueta strong { font-size: 1.3rem; }
 }
