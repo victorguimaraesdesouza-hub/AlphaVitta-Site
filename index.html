@@ -13,7 +13,7 @@
     (function () {
       var t;
       try { t = localStorage.getItem("av-tema"); } catch (e) {}
-      if (t !== "claro" && t !== "escuro") t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "escuro" : "claro";
+      if (t !== "escuro") t = "claro";
       document.documentElement.setAttribute("data-tema", t);
     })();
   </script>
